@@ -1,0 +1,18 @@
+@mixin flexBox($justify, $align) {
+     display: flex;
+     justify-content: $justify;
+     align-items: $align;
+}
+
+@mixin gridSystem($justify, $align, $gap) {
+     display: grid;
+     justify-items: $justify;
+     align-content: $align;
+     gap: $gap;
+}
+
+@mixin rounded($height, $width, $radius) {
+     height: $height;
+     width: $width;
+     border-radius: $radius;
+}

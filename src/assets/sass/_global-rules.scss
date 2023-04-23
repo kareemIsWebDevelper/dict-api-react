@@ -1,0 +1,16 @@
+$para-size: 15px;
+$indent: 10px;
+$light: rgb(255, 255, 255);
+$violet: violet;
+
+* , 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+       background-color: rgb(240, 239, 239);
+}

@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(240, 239, 239);
+}
+
+.active {
+  background-color: red;
+}
+
+body.dark {
+  background-color: red;
+}
+
+.dark {
+  background-color: black;
+}
+
+/* Navigation */
+.navbar {
+  width: 100%;
+  padding-top: 30px;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.navbar .nav-options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+.navbar .nav-options select {
+  height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  text-indent: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+}
+.navbar .nav-options .toggle {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.navbar .nav-options .toggle.active .indicator {
+  left: 30px;
+}
+.navbar .nav-options .toggle .indicator {
+  position: absolute;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  transform: scale(0.9);
+  border-radius: 15px;
+}
+
+img {
+  width: 3em;
+  height: 3em;
+  background: rgb(255, 255, 255);
+}
+
+/* Navigation */
+/* Search Bar */
+.wrapper {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 0;
+  width: 100%;
+}
+.wrapper .form-group {
+  width: 70%;
+}
+.wrapper .form-group input {
+  height: 50px;
+  width: 900px;
+  border-radius: 15px;
+  text-indent: 20px;
+  z-index: -1;
+  font-size: 20px;
+  margin-top: 15px;
+  background: white;
+  border: none;
+  padding-right: 30px;
+}
+.wrapper .form-group input:hover {
+  border: 1px solid darkgray;
+}
+.wrapper .form-group img {
+  top: 102px;
+  right: 249px;
+  position: absolute;
+  top: -1;
+  z-index: 1;
+  border-radius: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 0;
+}
+
+/* Search Bar*/
+/* Content */
+.wrapper .content {
+  width: 70%;
+  margin-top: 10px;
+}
+.wrapper .content .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wrapper .content .card-header h1 {
+  color: violet;
+}
+.wrapper .content .card-header audio {
+  background: rgb(255, 255, 255);
+}
+.wrapper .content .card-body .noun, .wrapper .content .card-body .meaning, .wrapper .content .card-body .verb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  gap: 30px;
+}
+.wrapper .content .card-body .noun p, .wrapper .content .card-body .meaning p, .wrapper .content .card-body .verb p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.wrapper .content .card-body .noun hr, .wrapper .content .card-body .meaning hr, .wrapper .content .card-body .verb hr {
+  color: violet;
+  width: 70%;
+}
+.wrapper .content .card-body .synonyms {
+  display: flex;
+  gap: 20px;
+}
+.wrapper .content .card-body .synonyms p:nth-child(2) {
+  color: violet;
+}
+.wrapper .content .card-body .meaning-list {
+  margin-bottom: 20px;
+}
+
+/* Content */
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Footer *//*# sourceMappingURL=index.css.map */
